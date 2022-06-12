@@ -1,0 +1,635 @@
+:root{
+    /* Primary colors*/
+--soft-blue:hsl(231, 69%, 60%);
+--soft-red:hsl(0, 94%, 66%);
+    /* Neutral colors*/
+--Grayish-Blue:hsl(229, 8%, 60%);
+--Very-Dark-Blue :hsl(229, 31%, 21%);  
+}
+/*css reset*/
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif; ;
+}
+body{
+    width:1540px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Courgette&family=Montserrat:ital,wght@1,300&family=Rubik:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Montserrat:ital,wght@1,300&family=Rubik:wght@300&display=swap');
+.navbar{
+    height:90px;
+    display:flex;
+    justify-content: space-between;
+align-items: center;
+
+}
+.bookmark-logo img{
+    margin-left: 120px;
+}
+.menu{
+    margin-right:120px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.menu *{
+
+    margin-right:15px;
+    color: var(--Grayish-Blue);
+    text-decoration: none;
+    Font-size: 15px;
+    font-weight:400px ;
+    font-family: 'Rubik', sans-serif;
+}
+.menu button{
+    height:30px;
+    width:90px;
+    background-color: var(--soft-red);
+    color:white;
+    border: 2px solid var(--soft-red);
+    border-radius: 6px;
+}
+.menu button:hover{
+    background-color:white;
+    border:2px solid --soft-red;
+    color:var(--soft-red);
+    }
+    
+.menu a:hover{
+color:var(--soft-red);
+}
+
+.bookmark-manager{
+    display:flex;
+    align-items: center;
+    height: 600px;
+   
+    
+
+}
+.bookmark-img{
+  display: flex; 
+    justify-content: space-between;
+    width:600px;
+    height:350px;
+    
+}
+.blue-background{
+    background-color: var(--soft-blue);
+    width:600px;
+    height:300px;
+     margin-left:70%;
+     border-radius: 200px;
+     position: absolute;
+     margin-top:180px;
+     left:120px;
+    
+
+}
+.bookmark-img img{
+    z-index: 2;
+    position: relative;
+    padding-left: 150px;
+    margin-bottom:450px;
+    width:800px;
+  
+    
+}
+.bookmark-intro{
+    display:flex;
+    flex-direction: column;
+height:300px;
+    margin-left:90px;
+    width:500px;
+ 
+}
+.bookmark-intro h1{
+font-size: 40px;
+color:var(--Very-Dark-Blue);
+}
+.bookmark-intro p{
+    font-size:18px ;
+    color:var(--Grayish-Blue);
+    }
+
+
+.browsers-tab{
+    display:flex;
+    justify-content: space-around;
+    margin-right: 20px;;
+}
+.bookmark-intro *{
+margin-top: 15px;
+}
+/*.browsers-tab a{
+    text-decoration: none;
+    background-color: var(--soft-blue);
+    color:white;
+}*/
+.chrome {
+   
+    background-color: var(--soft-blue);
+    width:200px;
+    height:35px;
+    text-align: center;
+    color:white;
+    padding-top: 6px;
+    border-radius: 10px;
+}
+.chrome a{
+    text-decoration: none;
+    color:white;
+    font-family: 'rubik';
+    font-size: 18px;
+
+}
+.chrome:hover{
+    background-color:white;
+    border:2px solid var(--soft-blue);
+
+}
+.chrome a:hover{
+    color:var(--soft-blue);
+    font-weight: 400px;
+}
+.firefox {
+   
+    background-color: var(--Grayish-Blue);
+    width:200px;
+    height:35px;
+    text-align: center;
+    color:white;
+    padding-top: 6px;
+    border-radius: 10px;
+}
+.firefox a{
+    text-decoration: none;
+    color:white;
+    font-family: 'rubik';
+    font-size: 18px;
+   
+
+}
+.firefox:hover{
+    background-color:white;
+    border:2px solid var(--Grayish-Blue);
+
+}
+.firefox a:hover{
+    color:var(--Grayish-Blue);
+    font-weight: 400px;
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width:500px;
+    margin-left:500px;
+    margin-top: 40px;
+}
+.bottom h1{
+    color:var(--Very-Dark-Blue);
+    font-size: 30px;
+}
+.bottom p{
+    color:var(--Grayish-Blue);
+}
+.bottom *{
+    margin-top:10px;
+}
+.indicators{
+    margin-top: 40px;
+    margin-left:400px;
+    display:flex;
+align-items: center;
+
+}
+.indicators span:hover{
+    color:var(--soft-red)
+}
+.indicators *{
+    margin-left:25px;
+
+}
+.indicators #sharing , #searching{
+    color:var(--Grayish-Blue);
+}
+.indicators  #bookmarking:hover{
+    color:var(--soft-red);
+}
+.indicators  #sharing:hover{
+    color:var(--soft-red);
+}
+.indicators #searching:hover{
+    color:var(--soft-red);
+}
+.indicators #bookmarking{
+    color:var(--Very-Dark-Blue);
+} 
+.grey-line{
+   /* */
+  
+    height: 1px;
+    background-color: var(--Grayish-Blue);
+    width: 530px;
+    margin-left: 425px;
+}
+.red-line{
+    
+    margin-top: 35px;
+    background-color: var(--soft-red); 
+    height:3px;
+    width:200px;
+    margin-left: 425px;
+}
+.bookmark-info{
+    width:400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    
+}
+.bookmark-info *{
+    margin-bottom: 10px;
+}
+.bookmark-info h1{
+    color:var(--Very-Dark-Blue);
+    font-size: 35px;
+}
+.bookmark-info p{
+    color:var(--Grayish-Blue);
+    text-align: left;
+}
+.bookmark-info button{
+    width:100px;
+    height:40px;
+    background-color: var(--soft-blue);
+    border: none;
+    border-radius: 7px ;
+    color:white;
+    font-size: 15px;
+    
+}
+.bookmark-oneclick{
+    display: flex; 
+    justify-content: space-between;
+    width:600px;
+    height:350px;   
+}
+.blue-background2{
+    background-color: var(--soft-blue);
+    width:600px;
+    height:270px;
+     margin-right:70%;
+     border-radius: 200px;
+     position: absolute;
+     margin-top:190px;
+     right:120px;
+}
+.bookmark-oneclick img{
+    z-index: 2;
+    position: relative;
+    padding-left: 90px;
+    padding-top: 10px;
+    box-shadow: 20px 20px 20px --soft-blue;
+    
+}
+.extensions{
+    margin-top:100px;
+    display:flex;
+    align-items: center;
+    margin-left: 250px;
+}
+.extensions *{
+    margin-right:15px;
+}
+.chrome-extension ,.firefox-extension,.opera-extension{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height:300px;
+    box-shadow: 10px 10px  20px var(--Grayish-Blue);
+    margin-left:40px;
+    
+}
+.extension-name span{
+    font-size: 18px;
+    font-weight: bold;
+    color:var(--Very-Dark-Blue);
+    margin-bottom: 5px;
+}
+.extension-version{
+    margin-top: 30px;
+}
+.extension-version span{
+    font-size: 16px;
+    color:var(--Grayish-Blue);
+   
+}
+.extension-logo{
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.border{
+    padding:10px 200px 10px 10px;
+    border-style: dashed ;
+    border-width: 0px 0px 2px 0px ;
+    border-color: var(--Grayish-Blue);
+    
+}
+.install-button button{
+    background-color: var(--soft-blue);
+    color:white;
+    font-size:15px;
+    width:230px;
+    height:33px;
+    margin-top:10px;
+    margin-left:35px;
+    border:2px solid var(--soft-blue);
+    border-radius: 10px;
+}
+.install-button button:hover{
+    background-color:white;
+   color:var(--soft-blue);
+   font-weight: bold;
+   font-size: 12px;
+}
+.firefox-extension{
+    margin-top:40px;
+}
+.opera-extension{
+    margin-top:100px;
+} 
+/*FAQs starts here*/
+.faq-section {
+    max-width: 500px;
+    margin-top:80px;
+    margin-left:500px;
+  }
+  
+  
+  header > p {
+    font-size: 22px;
+    color:var(--Very-Dark-Blue);
+  }
+  
+  h2 {
+    font-size: 52px;
+    color: #f4f4f6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  details {
+    cursor: pointer;
+  }
+  
+  h4 {
+    width: 760px;
+  }
+  
+  summary {
+    font-size: 18px;
+    color:var(--Very-Dark-Blue);
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    
+  }
+  .chbik:hover{
+    color:var(--soft-red);
+  }
+  
+  summary::marker {
+    display: none;
+    content: "";
+  }
+  
+  span {
+    margin-top: 4px;
+    color: #f4f4f6;
+  }
+  
+  details > p {
+    max-width: 650px;
+    color: var(--Very-Dark-Blue);
+    font-size: 18px;
+    line-height: 155%;
+    letter-spacing: .1px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+  }
+  
+  hr {
+    color: #313133;
+    margin-block: 20px;
+  }
+  #boutton2 {
+    width:100px;
+    height:40px;
+    background-color: var(--soft-blue);
+    border: none;
+    border-radius: 7px ;
+    color:white;
+    font-size: 15px;
+    margin-left:200px;
+  }
+  .blue-space{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    margin-top:100px;
+    height:350px;
+    background-color: var(--soft-blue);
+  }
+  .contact-us{
+    display:flex;
+    margin-top: 25px;
+
+  }
+  .all{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:500px;;
+  }
+  .all .visitor{
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 35px;
+  }
+ 
+  .all .symbol{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 35px;
+    }
+    .contact-us input{
+       
+        padding-left: 9px;
+        border: 1px solid var(--soft-red);
+
+    }
+     #email{
+        background-color:white;
+        border-radius: 5px;
+        width: 280px;
+        height:35px;
+        border: none; 
+        color: var(--Grayish-Blue);
+        font-size: 12px;
+        font-weight: bold;
+       margin-right:20px;
+       background-repeat: no-repeat;
+  background-position: 250px 4px;
+    }
+    #click{
+        background-color:var(--soft-red);
+        border:2px solid --soft-red;
+        color:white;
+        height:35px;
+        width:85px;
+        border:2px solid var(--soft-red);
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        margin-right:50px;
+    }
+    #click:hover{
+        background-color:white;
+        border:2px solid --soft-red;
+        color:var(--soft-red);  
+    }
+   
+    .dark-blue-section{
+        background-color: var(--Very-Dark-Blue);
+        height:75px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu2{
+        width:500px;
+        display:flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: space-between;
+        margin-left: 10px;
+        
+
+    }
+    .menu2 a{
+       
+        font-size:10px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color:rgb(224, 221, 221)
+    }
+    .logo img {
+        position:absolute;
+        width: 160px;
+        
+        
+        
+
+        
+    }
+    .logo span{
+        position: relative;
+        margin-left:35px;
+        font-weight:bold ;
+        
+    }
+    .logo{
+        display: flex;
+        margin-right:40px;
+        align-items: center;
+    }
+    .menu1{
+        width:500px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+
+    } 
+    .icons i{
+        flex: 1;
+        color: white;
+        background-color: var(--Very-Dark-Blue);
+       
+
+    }
+    .icons *{
+        padding-top:15px;
+        margin-left: 10px;
+       
+        
+    }
+    #email-error{
+    font-size: small;
+    font-family: 'Courgette', cursive;
+    }
+    .error-space{
+        width: 280px;
+        height:26px;
+        border-radius:0px 0px 9px 9px;
+        color:white;
+        margin-bottom: 8px;
+        padding-left: 20px;
+        padding-top: 3px;
+        font-size: 18px;
+    }
+    .menu2 a:hover{
+        color:var(--soft-red);
+    }
+    .icons a:hover{
+        color:var(--soft-red);
+    }
+    
+      @font-face {
+        font-family: 'CalciteWebCoreIcons';
+        src:
+          url('https://raw.githubusercontent.com/Esri/arcgis-js-api/master/themes/calcite/icons/fonts/CalciteWebCoreIcons.ttf?cu4poq') format('truetype'),
+          url('https://raw.githubusercontent.com/Esri/arcgis-js-api/master/themes/calcite/icons/fonts/CalciteWebCoreIcons.woff?cu4poq') format('woff'),
+          url('https://raw.githubusercontent.com/Esri/arcgis-js-api/master/themes/calcite/icons/fonts/CalciteWebCoreIcons.svg?cu4poq#CalciteWebCoreIcons') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      [class^="esri-icon-"], [class*=" esri-icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'CalciteWebCoreIcons' !important;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .esri-icon-up:before {
+        content: "\e682";
+        
+      }
+      
